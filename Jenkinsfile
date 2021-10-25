@@ -16,14 +16,14 @@ stage('Deploy Commit') {
   node {
     gctsDeploy(
       script: this,
-      host: 'http://192.140.0.4:8443',
+      host: 'http://192.140.0.4:8444',
       client: '100',
       abapCredentialsId: 'ABAPUserPasswordCredentialsId',
       repository: 'gitRepo',
-      remoteRepositoryURL: "https://github.com/Dineshfujitsu/SDD_SDQ.git",
+      remoteRepositoryURL: "https://github.com/Dineshfujitsu/Dineshfujitsu-gCTSRepo.git",
       role: 'TARGET',
-      vSID: 'SDD',
-      branch: 'master',
+      vSID: 'S4D',
+      branch: 'main',
       commit: 'commit',
       scope: 'scope',
       rollback: false,
