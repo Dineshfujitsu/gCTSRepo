@@ -20,7 +20,7 @@ stage('Deploy Commit') {
       client: '100',
       abapCredentialsId: 'ABAPUserPasswordCredentialsId',
       repository: 'gitRepo',
-      remoteRepositoryURL: "https://github.com/Dineshfujitsu/Dineshfujitsu-gCTSRepo.git",
+      remoteRepositoryURL: "https://github.com/Dineshfujitsu/gCTSRepo.git",
       role: 'SOURCE',
       vSID: 'S4D',
       branch: 'main',
