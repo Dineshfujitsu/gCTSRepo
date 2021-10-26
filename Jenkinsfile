@@ -21,14 +21,13 @@ stage('Deploy Commit') {
       abapCredentialsId: 'ABAPUserPasswordCredentialsId',
       repository: 'gitRepo',
       remoteRepositoryURL: "https://github.com/Dineshfujitsu/Dineshfujitsu-gCTSRepo.git",
-      role: 'TARGET',
+      role: 'SOURCE',
       vSID: 'S4D',
       branch: 'main',
-      commit: 'commit',
-      scope: 'scope',
+      scope: 'LASTACTION',
       rollback: false,
       verbose: true,
-      configuration: [dummyConfig: 'dummyval']   
+      configuration: [VCS_AUTOMATIC_PULL: 'FALSE',VCS_AUTOMATIC_PUSH: 'FALSE',CLIENT_VCS_LOGLVL: 'debug'] 
     )
   }    
 }
