@@ -6,7 +6,7 @@ Steps:
     client: '100'
     abapCredentialsId: 'ABAPUserPasswordCredentialsId'
     repository: 'Dineshfujitsu-gCTSRepo'
-    remoteRepositoryURL: "https://github.com/Dineshfujitsu/Dineshfujitsu-gCTSRepo.git"
+    remoteRepositoryURL: "https://github.com/Dineshfujitsu/gCTSRepo.git"
     role: 'SOURCE'
     vSID: 'S4D'
     branch: 'main'
