@@ -2,7 +2,7 @@
 general:
 Steps:
   gctsDeploy:
-    host: 'http://192.140.0.4:8444'
+    host: 'https://192.140.0.4:8444'
     client: '100'
     abapCredentialsId: 'ABAPUserPasswordCredentialsId'
     repository: 'Dineshfujitsu-gCTSRepo'
