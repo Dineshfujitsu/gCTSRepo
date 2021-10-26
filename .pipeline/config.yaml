@@ -7,11 +7,12 @@ Steps:
     abapCredentialsId: 'ABAPUserPasswordCredentialsId'
     repository: 'Dineshfujitsu-gCTSRepo'
     remoteRepositoryURL: "https://github.com/Dineshfujitsu/Dineshfujitsu-gCTSRepo.git"
-    role: 'TARGET'
+    role: 'SOURCE'
     vSID: 'S4D'
     branch: 'main'
-    commit: 'commit'
-    scope: 'scope'
+    scope: 'CRNTCOMMIT'
     rollback: false
     configuration:
-        dummyconfig: "dummyval"
+        VCS_AUTOMATIC_PULL: "FALSE"
+        VCS_AUTOMATIC_PUSH: "FALSE"
+        CLIENT_VCS_LOGLVL: "debug"
