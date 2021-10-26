@@ -19,7 +19,7 @@ stage('Deploy Commit') {
       host: 'https://hana4poc.zwtkfpvhnzsehekvcftg5kfdud.rx.internal.cloudapp.net:8444',
       client: '100',
       abapCredentialsId: 'ABAPUserPasswordCredentialsId',
-      repository: 'gitRepo',
+      repository: 'Dineshfujitsu-gCTSRepo',
       remoteRepositoryURL: "https://github.com/Dineshfujitsu/gCTSRepo.git",
       role: 'SOURCE',
       vSID: 'S4D',
