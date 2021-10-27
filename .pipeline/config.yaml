@@ -1,6 +1,11 @@
 #Steps Specific Configuration
 general:
 Steps:
+  gctsExecuteABAPUnitTests:
+    host: 'https://hana4poc.zwtkfpvhnzsehekvcftg5kfdud.rx.internal.cloudapp.net:8444'
+    client: '100'
+    abapCredentialsId: 'ABAPUserPasswordCredentialsId'
+    repository: 'Dineshfujitsu-gCTSRepo'
   gctsDeploy:
     host: 'https://hana4poc.zwtkfpvhnzsehekvcftg5kfdud.rx.internal.cloudapp.net:8444'
     client: '100'
