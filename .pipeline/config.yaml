@@ -10,6 +10,7 @@ Steps:
     role: 'SOURCE'
     vSID: 'S4D'
     branch: 'main'
+    commit: '9cd4553'
     scope: 'CRNTCOMMIT'
     rollback: false
     configuration:
