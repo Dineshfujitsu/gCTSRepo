@@ -1,0 +1,32 @@
+[
+ {
+  "table":"T171",
+  "nametab":
+  [
+   {
+    "NAME":"MANDT",
+    "KEY":"X",
+    "TYPE":"C",
+    "LENGTH":3,
+    "DECIMALS":-1
+   },
+   {
+    "NAME":"BZIRK",
+    "KEY":"X",
+    "TYPE":"C",
+    "LENGTH":6,
+    "DECIMALS":-1
+   }
+  ],
+  "properties":
+  [
+   {
+    "CLIENTDEPENDENCY":"YES",
+    "DELIVERYCLASS":"C",
+    "TABART":"APPL2",
+    "TABFORM":"T",
+    "REFNAME":"-"
+   }
+  ]
+ }
+]
