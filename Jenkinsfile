@@ -24,6 +24,7 @@ stage('Deploy Commit') {
       role: 'SOURCE',
       vSID: 'S4D',
       branch: 'main',
+      commit: '9cd4553',
       scope: 'LASTACTION',
       rollback: false,
       verbose: true,
