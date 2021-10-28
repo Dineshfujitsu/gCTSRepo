@@ -11,7 +11,7 @@ stage('Deploy') {
       password: 'Welcome123',
       repository: 'dineshfujitsu-gctsrepo',
       remoteRepositoryURL: "https://github.com/Dineshfujitsu/gCTSRepo.git",
-      role: 'TARGET',
+      role: 'SOURCE',
       vSID: 'S4D',
       rollback: false,
       verbose: true
