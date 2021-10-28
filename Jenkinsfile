@@ -5,7 +5,7 @@ stage('Deploy') {
   node {
     gctsDeploy(
       script: this,
-      host: 'https://hana4poc.zwtkfpvhnzsehekvcftg5kfdud.rx.internal.cloudapp.net:8444',
+      host: 'http://hana4poc.zwtkfpvhnzsehekvcftg5kfdud.rx.internal.cloudapp.net:8002',
       client: '100',
       username: 'dinesh',
       password: 'Fujitsu@123',
