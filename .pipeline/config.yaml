@@ -1,17 +1,11 @@
 #Steps Specific Configuration
 general:
-Steps:
+steps:
   gctsDeploy:
-    host: 'https://hana4poc.zwtkfpvhnzsehekvcftg5kfdud.rx.internal.cloudapp.net:8444'
+    host: 'http://hana4poc.zwtkfpvhnzsehekvcftg5kfdud.rx.internal.cloudapp.net:8002'
     client: '100'
     abapCredentialsId: 'ABAPUserPasswordCredentialsId'
     repository: 'dineshfujitsu-gCTSRepo'
     remoteRepositoryURL: "https://github.com/Dineshfujitsu/gCTSRepo.git"
     vSID: 'S4D'
-    rollback: false
-    configuration:
-        VCS_AUTOMATIC_PULL: "FALSE"
-        VCS_AUTOMATIC_PUSH: "FALSE"
-        CLIENT_VCS_LOGLVL: "debug"
-
-
+    rollback: true
