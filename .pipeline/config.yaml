@@ -2,7 +2,7 @@
 general:
 Steps:
   gctsExecuteABAPUnitTests:
-    host: 'http://hana4poc.zwtkfpvhnzsehekvcftg5kfdud.rx.internal.cloudapp.net:8002'
-    client: '000'
-    abapCredentialsId: 'ABAPUserPasswordCredentialsId2'
+    host: 'https://hana4poc.zwtkfpvhnzsehekvcftg5kfdud.rx.internal.cloudapp.net:8444'
+    client: '100'
+    abapCredentialsId: 'ABAPUserPasswordCredentialsId'
     repository: 'Dineshfujitsu-gCTSRepo'
