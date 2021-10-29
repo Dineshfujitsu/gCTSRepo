@@ -5,5 +5,8 @@
 *&---------------------------------------------------------------------*
 REPORT zgcts_002.
 
-Write: 'Hello World!'.
-Write: 'Hello World 05!'.
+WRITE: 'Hello World!'.
+WRITE: 'Hello World 05!'.
+
+*Prog 002 V02.06
+WRITE: 'Hello World 06!'.
