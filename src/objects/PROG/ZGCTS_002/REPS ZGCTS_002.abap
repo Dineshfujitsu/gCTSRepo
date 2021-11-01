@@ -22,3 +22,6 @@ WRITE: 'Hello World 09!'.
 
 *Prog 002 V02.10
 WRITE: 'Hello World 10!'.
+
+*Prog 002 V02.11
+WRITE: 'Hello World 11!'.
