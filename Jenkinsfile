@@ -9,7 +9,7 @@ stage('Deploy') {
       abapCredentialsId: 'ABAPUserPasswordCredentialsId',
       repository: 'dineshfujitsu-gctsrepo',
       remoteRepositoryURL: "https://github.com/Dineshfujitsu/gCTSRepo.git",
-      role: 'TARGET',
+      role: 'SOURCE',
       vSID: 'S4D',
       branch: 'main',
       scope: 'LASTACTION',
