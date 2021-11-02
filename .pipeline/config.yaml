@@ -2,10 +2,13 @@
 general:
 steps:
   gctsDeploy:
-    host: 'http://hana4poc.zwtkfpvhnzsehekvcftg5kfdud.rx.internal.cloudapp.net:8002'
+    host: 'https://hana4poc.zwtkfpvhnzsehekvcftg5kfdud.rx.internal.cloudapp.net:8444'
     client: '100'
-    abapCredentialsId: 'ABAPUserPasswordCredentialsId2'
-    repository: 'dineshfujitsu-gCTSRepo'
+    abapCredentialsId: 'ABAPUserPasswordCredentialsId'
+    repository: 'dineshfujitsu-gctsrepo'
     remoteRepositoryURL: "https://github.com/Dineshfujitsu/gCTSRepo.git"
+    role: 'TARGET'
     vSID: 'S4D'
+    branch: 'man'
+    scope: 'LASTACTION'
     rollback: true
