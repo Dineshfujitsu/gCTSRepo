@@ -1,6 +1,5 @@
 library('piper-lib-os') _
 
-
 stage('Deploy') {
   node {
     gctsDeploy(
@@ -10,9 +9,11 @@ stage('Deploy') {
       abapCredentialsId: 'ABAPUserPasswordCredentialsId',
       repository: 'dineshfujitsu-gctsrepo',
       remoteRepositoryURL: "https://github.com/Dineshfujitsu/gCTSRepo.git",
+      role: 'TARGET',
       vSID: 'S4D',
-      rollback: true,
-      verbose: true
+      branch: 'main',
+      scope: 'LASTACTION',
+      rollback: true
     )
   }    
 }
