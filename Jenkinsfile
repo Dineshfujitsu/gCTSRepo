@@ -6,7 +6,7 @@ stage('Deploy') {
       script: this,
       host: 'https://hana4poc.zwtkfpvhnzsehekvcftg5kfdud.rx.internal.cloudapp.net:8444',
       client: '100',
-      abapCredentialsId: 'ABAPUserPasswordCredentialsId',
+      abapCredentialsId: 'ABAPUserPasswordCredentialsId2',
       repository: 'dineshfujitsu-gctsrepo',
       remoteRepositoryURL: 'https://github.com/Dineshfujitsu/gCTSRepo.git',
       role: 'TARGET',
