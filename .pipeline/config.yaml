@@ -11,3 +11,13 @@ steps:
     branch: 'main'
     scope: 'LASTACTION'
     rollback: true
+  gctsExecuteABAPUnitTests:
+    host: 'http://hana4poc.zwtkfpvhnzsehekvcftg5kfdud.rx.internal.cloudapp.net:8002'
+    client: '100'
+    abapCredentialsId: 'ABAPUserPasswordCredentialsId'
+    repository: 'dineshfujitsu-gctsrepo'
+  gctsRollback:
+    host: 'http://hana4poc.zwtkfpvhnzsehekvcftg5kfdud.rx.internal.cloudapp.net:8002'
+    client: '100'
+    abapCredentialsId: 'ABAPUserPasswordCredentialsId'
+    repository: 'dineshfujitsu-gctsrepo'
