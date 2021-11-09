@@ -40,3 +40,9 @@ WRITE: 'Hello World 15!'.
 
 *Prog 002 V02.16
 WRITE: 'Hello World 16!'.
+
+*Prog 002 V02.17
+WRITE: 'Hello World 17!'.
+
+*Prog 002 V02.18
+WRITE: 'Hello World 18!'.
