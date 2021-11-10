@@ -12,32 +12,10 @@ stage('Deploy') {
       role: 'TARGET',
       vSID: 'S4D',
       branch: 'main',
+      commit: 'bf0e343',
       scope: 'LASTACTION',
-      rollback: false
-    )
-  }    
-}
-
-stage('Execute Unit Tests') {
-  node { 
-    gctsExecuteABAPUnitTests(
-      script: this,
-      host: 'http://hana4poc.zwtkfpvhnzsehekvcftg5kfdud.rx.internal.cloudapp.net:8002',
-      client: '100',
-      abapCredentialsId: 'ABAPUserPasswordCredentialsId',
-      repository: 'dineshfujitsu-gctsrepo',
-    )
-  }    
-}
-
-stage('Rollback') {
-  node { 
-    gctsRollback(
-      script: this,
-      host: 'http://hana4poc.zwtkfpvhnzsehekvcftg5kfdud.rx.internal.cloudapp.net:8002',
-      client: '100',
-      abapCredentialsId: 'ABAPUserPasswordCredentialsId',
-      repository: 'dineshfujitsu-gctsrepo',
+      rollback: false,
+      configuration: [VCS_AUTOMATIC_PULL: 'FALSE',VCS_AUTOMATIC_PUSH: 'FALSE',CLIENT_VCS_LOGLVL: 'debug']
     )
   }    
 }
