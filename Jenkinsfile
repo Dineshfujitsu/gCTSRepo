@@ -12,8 +12,7 @@ stage('Deploy') {
       role: 'TARGET',
       vSID: 'S4D',
       branch: 'main',
-      commit: 'ed44fd9',
-      scope: 'CRNTCOMMIT',
+      scope: 'LASTACTION',
       rollback: true
     )
   }    
