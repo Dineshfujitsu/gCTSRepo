@@ -13,7 +13,7 @@ stage('Deploy') {
       vSID: 'S4D',
       branch: 'main',
       scope: 'LASTACTION',
-      rollback: true
+      rollback: false
     )
   }    
 }
@@ -29,7 +29,6 @@ stage('Execute Unit Tests') {
     )
   }    
 }
-
 
 stage('Rollback') {
   node { 
