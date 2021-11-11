@@ -9,8 +9,8 @@ steps:
     role: 'TARGET'
     vSID: 'S4D'
     branch: 'main'
-    scope: 'LASTACTION'
-    rollback: true
+    scope: 'CRNTCOMMIT'
+    rollback: false
   gctsExecuteABAPUnitTests:
     host: 'http://hana4poc.zwtkfpvhnzsehekvcftg5kfdud.rx.internal.cloudapp.net:8002'
     client: '100'
