@@ -1,3 +1,7 @@
-library('piper-lib-os')
+@Library('piper-lib-os') _
 
-gctsDeploy script: this
+node() {
+  stage('Deploy') {
+    gctsDeploy script: this
+  }
+}
