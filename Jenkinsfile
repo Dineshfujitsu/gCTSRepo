@@ -16,4 +16,15 @@ node() {
           configuration: [VCS_AUTOMATIC_PULL: 'FALSE',VCS_AUTOMATIC_PUSH: 'FALSE',CLIENT_VCS_LOGLVL: 'debug']
         )
   }
+  
+  stage('Unit Tests') {
+    node { 
+      gctsExecuteABAPUnitTests(
+        script: this,
+        host: 'http://hana4poc.zwtkfpvhnzsehekvcftg5kfdud.rx.internal.cloudapp.net:8002',
+        client: '100',
+        abapCredentialsId: 'ABAPUserPasswordCredentialsId',
+        repository: 'dineshfujitsu-gctsrepo',
+      )
+    }     
 }
