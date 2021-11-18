@@ -11,8 +11,6 @@ node() {
       remoteRepositoryURL: 'https://github.com/Dineshfujitsu/gCTSRepo.git',
       role: 'TARGET',
       vSID: 'S4D',
-      branch: 'main',
-      scope: 'CRNTCOMMIT',
       configuration: [VCS_AUTOMATIC_PULL: 'FALSE',VCS_AUTOMATIC_PUSH: 'FALSE',CLIENT_VCS_LOGLVL: 'debug']
     )
   }
