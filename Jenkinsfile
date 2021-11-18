@@ -24,14 +24,16 @@ node() {
       repository: 'dineshfujitsu-gctsrepo',
     )
   }     
-
+  
   stage('Rollback') {
-    gctsRollback(
-      script: this,
-      host: 'http://hana4poc.zwtkfpvhnzsehekvcftg5kfdud.rx.internal.cloudapp.net:8002',
-      client: '100',
-      abapCredentialsId: 'ABAPUserPasswordCredentialsId',
-      repository: 'dineshfujitsu-gctsrepo',
-    )
-  }    
+    if (gctsExecuteABAPUnitTests.isEmpty()) {
+      gctsRollback(
+        script: this,
+        host: 'http://hana4poc.zwtkfpvhnzsehekvcftg5kfdud.rx.internal.cloudapp.net:8002',
+        client: '100',
+        abapCredentialsId: 'ABAPUserPasswordCredentialsId',
+        repository: 'dineshfujitsu-gctsrepo',
+      )
+    }
+  }
 }
