@@ -1,5 +1,5 @@
   METHOD execute.
-    "Demo Prog V01.09
+    "Demo Prog V01.10
     data-key = 'Hello'.
-    data-value = 'World 09'.
+    data-value = 'World 10'.
   ENDMETHOD.
