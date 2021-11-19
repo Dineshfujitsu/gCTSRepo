@@ -9,8 +9,7 @@ pipeline {
     }
     
     stages {
-        stage("Deploy") {
-            steps {
+	stage("Deploy") {
 		gctsDeploy(
 		  script: this,
 		  host: 'http://hana4poc.zwtkfpvhnzsehekvcftg5kfdud.rx.internal.cloudapp.net:8002',
@@ -22,8 +21,7 @@ pipeline {
 		  vSID: 'S4D',
 		  configuration: [VCS_AUTOMATIC_PULL: 'FALSE',VCS_AUTOMATIC_PUSH: 'FALSE',CLIENT_VCS_LOGLVL: 'debug']
 		)
-            }
-        }        
+	}        
 		
 	stage("Unit Tests") {
             steps {
