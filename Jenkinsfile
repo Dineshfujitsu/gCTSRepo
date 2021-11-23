@@ -1,15 +1,6 @@
 @Library('piper-lib-os') _
 
 node() {
-  
-  stage('Prepare') {
-
-  }
-
-  stage('Build') {
-
-  }
-  
   stage('Deploy') {
     gctsDeploy(
       script: this,
