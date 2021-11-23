@@ -328,7 +328,7 @@
     "SRCSYSTEM":"...",
     "AUTHOR":"DINESH",
     "SRCDEP":"",
-    "DEVCLASS":"ZGCTS_PKG",
+    "DEVCLASS":"ZGCTS_DEMO_PKG",
     "GENFLAG":"",
     "EDTFLAG":"",
     "CPROJECT":" S",
@@ -341,7 +341,7 @@
     "DELFLAG":"",
     "TRANSLTTXT":"",
     "CREATED_ON":"2021-11-09",
-    "CHECK_DATE":"2021-11-09",
+    "CHECK_DATE":"",
     "CHECK_CFG":""
    }
   ]
