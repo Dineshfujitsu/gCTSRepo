@@ -2,12 +2,12 @@
 
 node() {
   
-  stage('prepare') {
+  stage('Prepare') {
       checkout scm
       setupCommonPipelineEnvironment script:this
   }
 
-  stage('build') {
+  stage('Build') {
       mtaBuild script: this  
   }
   
