@@ -12,8 +12,9 @@ TYPES:
   BEGIN OF ty_vbak,
     vbeln TYPE vbeln_va,
     erdat TYPE erdat,
-*    auart TYPE auart,
-*    netwr TYPE netwr,
+***    auart TYPE auart,
+***    netwr TYPE netwr,
+***    waerk TYPE waerk,
   END OF ty_vbak.
 
 DATA:
@@ -50,13 +51,17 @@ FORM get_data.
 
   SELECT vbeln
     erdat
-*    auart
-*    netwr
+***    auart
+***    netwr
+***    waerk
   FROM vbak INTO TABLE it_vbak
     WHERE vbeln IN s_vbeln
 *      AND erdat IN s_erdat
 *      AND auart IN s_auart
     .
+  IF sy-subrc NE 0.
+    PERFORM fill_dummy_data.
+  ENDIF.
 ENDFORM.
 
 FORM display_output.
@@ -167,3 +172,34 @@ FORM chg_cat  USING    p_gr_table TYPE REF TO cl_salv_table.
   lr_columns  = p_gr_table->get_columns( ).
   lr_display  = p_gr_table->get_display_settings( ).
 ENDFORM.                    " CHG_CAT
+
+FORM fill_dummy_data.
+  DATA lw_vbrk LIKE LINE OF it_vbak.
+  lw_vbrk-vbeln = '0000000001'.
+  lw_vbrk-erdat = '20211025'.
+***  lw_vbrk-auart = 'TA'.
+***  lw_vbrk-netwr = '1.00'.
+***  lw_vbrk-waerk = 'EUR'.
+  APPEND lw_vbrk TO it_vbak.
+
+  lw_vbrk-vbeln = '0000000002'.
+  lw_vbrk-erdat = '20211025'.
+***  lw_vbrk-auart = 'BA'.
+***  lw_vbrk-netwr = '10.00'.
+***  lw_vbrk-waerk = 'EUR'.
+  APPEND lw_vbrk TO it_vbak.
+
+  lw_vbrk-vbeln = '0000000003'.
+  lw_vbrk-erdat = '20211025'.
+***  lw_vbrk-auart = 'CA'.
+***  lw_vbrk-netwr = '2.00'.
+***  lw_vbrk-waerk = 'EUR'.
+  APPEND lw_vbrk TO it_vbak.
+
+  lw_vbrk-vbeln = '0000000004'.
+  lw_vbrk-erdat = '20211025'.
+***  lw_vbrk-auart = 'DA'.
+***  lw_vbrk-netwr = '300.00'.
+***  lw_vbrk-waerk = 'EUR'.
+  APPEND lw_vbrk TO it_vbak.
+ENDFORM.
