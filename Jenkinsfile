@@ -10,7 +10,7 @@ node() {
       repository: 'dineshfujitsu-gctsrepo',
       remoteRepositoryURL: 'https://github.com/Dineshfujitsu/gCTSRepo.git',
       role: 'TARGET',
-      vSID: 'ZE4',
+      vSID: 'EH4',
       configuration: [VCS_AUTOMATIC_PULL: 'FALSE',VCS_AUTOMATIC_PUSH: 'FALSE',CLIENT_VCS_LOGLVL: 'debug']
     )
   }
