@@ -1,23 +1,23 @@
 general:
 steps:
   gctsDeploy:
-    host: 'http://hana4poc.zwtkfpvhnzsehekvcftg5kfdud.rx.internal.cloudapp.net:8002'
+    host: 'http://sap-linux.uw3eayeimf1uvkax5xugm5s5da.rx.internal.cloudapp.net:8004'
     client: '100'
     abapCredentialsId: 'ABAPUserPasswordCredentialsId'
     repository: 'dineshfujitsu-gctsrepo'
     remoteRepositoryURL: 'https://github.com/Dineshfujitsu/gCTSRepo.git'
     role: 'TARGET'
-    vSID: 'S4D'
+    vSID: 'ZE4'
     branch: 'main'
     scope: 'CRNTCOMMIT'
     rollback: false
   gctsExecuteABAPUnitTests:
-    host: 'http://hana4poc.zwtkfpvhnzsehekvcftg5kfdud.rx.internal.cloudapp.net:8002'
+    host: 'http://sap-linux.uw3eayeimf1uvkax5xugm5s5da.rx.internal.cloudapp.net:8004'
     client: '100'
     abapCredentialsId: 'ABAPUserPasswordCredentialsId'
     repository: 'dineshfujitsu-gctsrepo'
   gctsRollback:
-    host: 'http://hana4poc.zwtkfpvhnzsehekvcftg5kfdud.rx.internal.cloudapp.net:8002'
+    host: 'http://sap-linux.uw3eayeimf1uvkax5xugm5s5da.rx.internal.cloudapp.net:8004'
     client: '100'
     abapCredentialsId: 'ABAPUserPasswordCredentialsId'
     repository: 'dineshfujitsu-gctsrepo'
