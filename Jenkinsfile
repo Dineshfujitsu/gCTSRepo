@@ -4,7 +4,7 @@ node() {
   stage('Deploy') {
     gctsDeploy(
       script: this,
-      host: 'http://sap-linux.uw3eayeimf1uvkax5xugm5s5da.rx.internal.cloudapp.net:8000',
+      host: 'http://sap-linux.uw3eayeimf1uvkax5xugm5s5da.rx.internal.cloudapp.net:8004',
       client: '100',
       abapCredentialsId: 'ABAPUserPasswordCredentialsId',
       repository: 'dineshfujitsu-gctsrepo',
@@ -18,7 +18,7 @@ node() {
   stage('Unit Tests') {
     gctsExecuteABAPUnitTests(
       script: this,
-      host: 'https://SAP-LINUX.uw3eayeimf1uvkax5xugm5s5da.rx.internal.cloudapp.net:44302',
+      host: 'http://sap-linux.uw3eayeimf1uvkax5xugm5s5da.rx.internal.cloudapp.net:8004',
       client: '100',
       abapCredentialsId: 'ABAPUserPasswordCredentialsId',
       repository: 'dineshfujitsu-gctsrepo',
